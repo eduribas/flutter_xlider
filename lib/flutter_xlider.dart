@@ -325,7 +325,8 @@ class _FlutterSliderState extends State<FlutterSlider> with TickerProviderStateM
       sizes.add(_handlersWidth);
     }
 
-    return sizes.reduce(max as double? Function(double?, double?));
+    // return sizes.reduce(max as double? Function(double?, double?));
+    return sizes.reduce(max);
   }
 
   void initMethod() {

@@ -311,7 +311,7 @@ class _FlutterSliderState extends State<FlutterSlider>
           }
 
           return Stack(
-            overflow: Overflow.visible,
+            clipBehavior: Clip.none,
             children: <Widget>[
 //                  ..._points,
               Container(
@@ -319,7 +319,7 @@ class _FlutterSliderState extends State<FlutterSlider>
                 height: _containerHeight,
                 width: _containerWidth,
                 child: Stack(
-                  overflow: Overflow.visible,
+                  clipBehavior: Clip.none,
                   children: drawHandlers(),
                 ),
                 foregroundDecoration: widget.foregroundDecoration,
@@ -1486,7 +1486,7 @@ class _FlutterSliderState extends State<FlutterSlider>
         child: Draggable(
             axis: widget.axis,
             child: Stack(
-              overflow: Overflow.visible,
+              clipBehavior: Clip.none,
               children: [
                 _tooltip(
                     side: 'left',
@@ -1607,7 +1607,7 @@ class _FlutterSliderState extends State<FlutterSlider>
         child: Draggable(
             axis: Axis.horizontal,
             child: Stack(
-              overflow: Overflow.visible,
+              clipBehavior: Clip.none,
               children: [
                 _tooltip(
                     side: 'right',
